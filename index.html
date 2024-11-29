@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        button {
+            background-color: maroon;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body >
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCB1gMdJg6NPthLYEQnFzb8TS3uxIoLI1CQ&s"
+            height="50" style="border-radius: 50%;" alt="">
+        <div>
+            <h3 style="margin: 0px;">MARINDUQUE STATE UNIVERSITY</h3>
+            <h3 style="margin: 0px;">BACHELOR OF SCIENCE IN INFORMATION SYSTEM</h3>
+            <h3 style="margin: 10px;">JQUERY SESSION-WIDGETS</h3>
+            <hr>
+        </div>
+        <div class="container" style="margin: 0px;">
+            <a href="index.html" style="color: gold;font-size:20px;">WIDGETS</a>
+            <a href="inter/drag.html" style=" font-size:20px;">INTERACTIONS</a>
+            <a href="effect/addclass.html" style=" font-size:20px;">EFFECTS</a>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: gold;">HOME</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/accordion.html">ACCORDION</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/autocomplete.html">AUTO COMPLETE</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/button.html">BUTTON</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/checkbox.html">CHECKBOX RADIO</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/controlgroup.html">CONTROL GROUP</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/datepicker.html">DATE PICKER</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/dialog.html">DIALOG</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/menu.html">MENU</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/progressbar.html">PROGRESS BAR</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/selectmenu.html">SELECT MENU</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/slider.html">SLIDER</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/spinner.html">SPINNER</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/tabs.html">TABS</a></li>
+            </ul>
+            <ul>
+                <li><a href="pages/tooltip.html">TOOL TIP</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1 style="font-family: roman; letter-spacing: 2px;">HOME</h1>
+            <hr>
+            <p style="color: white;text-align: justify; margin-right: 20px;">
+                Welcome to our website! Here, you'll find a wide range of resources and tools designed to make your
+                experience enjoyable and productive. We are committed to providing valuable content and services that
+                meet your needs. Feel free to explore and contact us if you have any questions or feedback. Thank you
+                for visiting!
+            </p>
+            <div class="row">
+                <div class="col-2">
+                    <button id="idbutton"
+                        style="background: green;color:white;font-family:roman;font-weight: bolder;">ID</button>
+                    <button class="classbutton"
+                        style="background: yellow;color:black;font-family:roman;font-weight: bolder;">CLASS</button>
+                    <button id="Information"
+                        style="background: blue;color:white;font-family:roman;font-weight: bolder;">Click Me to Show
+                        Info</button>
+                    <button id="hideInfo">Click Me to Hide Info</button>
+                    <h1 id="showInfo" style="display:none;">Thank you for Clicking Me</h1>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p style="color: maroon;">s</p>
+        <p class="footer-text">COLLEGE OF INFORMATION AND COMPUTING SCIENCES. ALL RIGHTS RESERVED. COPYRIGHT &copy; 2024</p>
+    </footer>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#idbutton").click(function () {
+                alert("ID Button was clicked");
+            });
+
+            $(".classbutton").click(function () {
+                alert("Class Button was clicked");
+            });
+
+            $("#Information").click(function () {
+                $("#showInfo").show();
+            });
+
+            $("#hideInfo").click(function () {
+                $("#showInfo").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
